@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>TP 9: DRUM PROJECT</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Virtual Drum</h1>
+        </header>
+        <div class="keys">
+            <!-- Each div represents a key on the virtual drum, with corresponding audio and label -->
+            <div data-key="65" class="key">
+                <img src="assets/img/clap.png" alt="Clap">
+                <span>A</span>
+            </div>
+            <div data-key="83" class="key">
+                <img src="assets/img/clap.png" alt="HiHat">
+                <span>S</span>
+            </div>
+            <div data-key="68" class="key">
+                <img src="assets/img/kick.png" alt="Kick">
+                <span>D</span>
+            </div>
+            <div data-key="70" class="key">
+                <img src="assets/img/clap.png" alt="OpenHat">
+                <span>F</span>
+            </div>
+            <div data-key="71" class="key">
+                <img src="assets/img/boom.png" alt="Boom">
+                <span>G</span>
+            </div>
+            <div data-key="72" class="key">
+                <img src="assets/img/clap.png" alt="Ride">
+                <span>H</span>
+            </div>
+            <div data-key="74" class="key">
+                <img src="assets/img/snare.png" alt="Snare">
+                <span>J</span>
+            </div>
+            <div data-key="75" class="key">
+                <img src="assets/img/tom.png" alt="Tom">
+                <span>K</span>
+            </div>
+        </div>
+        
+        <!-- Each audio element corresponds to a key and its respective sound -->
+        <audio data-key="65" src="assets/sounds/clap.wav"></audio>
+        <audio data-key="83" src="assets/sounds/hihat.wav"></audio>
+        <audio data-key="68" src="assets/sounds/kick.wav"></audio>
+        <audio data-key="70" src="assets/sounds/openhat.wav"></audio>
+        <audio data-key="71" src="assets/sounds/boom.wav"></audio>
+        <audio data-key="72" src="assets/sounds/ride.wav"></audio>
+        <audio data-key="74" src="assets/sounds/snare.wav"></audio>
+        <audio data-key="75" src="assets/sounds/tom.wav"></audio>
+    </main>
+    <!-- jQuery library and custom JavaScript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
